@@ -14,12 +14,12 @@
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
-      background: #b83228;
+      background: #da796f;
       transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
-      background: #b83228;
+      background: #da796f;
       transform: rotate(-45deg) translate(5px, -7px); }
 
 .menu {
@@ -59,14 +59,14 @@
       height: 250px;
       background: url(../img/logos/logo-white-250x250.png);
       border-radius: 50%;
-      border: solid 4px #b83228; }
+      border: solid 4px #da796f; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.25s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #b83228; }
+      color: #da796f; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -78,7 +78,7 @@
     text-decoration: none;
     transition: all 0.25s ease-out; }
     .menu .nav-link:hover {
-      color: #b83228; }
+      color: #da796f; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -103,7 +103,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/band/midnight-blackout.jpg);
+    background: url(../img/band/midnight-blackout-home.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -136,28 +136,24 @@ a {
   color: #fff;
   text-decoration: none; }
 
+q {
+  font-style: italic; }
+
 header {
   position: fixed;
   z-index: 2;
   width: 100%; }
 
 .text-secondary {
-  color: #b83228; }
+  color: #da796f; }
 
 main {
   padding: 2rem 4rem;
-  min-height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #b83228;
-        transition: all 0.25s ease-out; }
+  min-height: calc(100vh - 90px); }
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 5vh; }
 
 .about-info {
   display: grid;
@@ -167,7 +163,7 @@ main {
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border: #b83228 4px solid;
+    border: #da796f 4px solid;
     border-radius: 50%; }
   .about-info .bio {
     grid-area: bio;
@@ -175,7 +171,7 @@ main {
   .about-info .highlight {
     background: #393c39;
     padding: 0.5rem;
-    border-bottom: #b83228 4px solid; }
+    border-bottom: #da796f 4px solid; }
   .about-info .highlight-1 {
     grid-area: highlight1; }
   .about-info .highlight-2 {
@@ -183,12 +179,52 @@ main {
   .about-info .highlight-3 {
     grid-area: highlight3; }
 
+.yt-bc {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "ytvideo bcplayer";
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; }
+  .yt-bc .yt {
+    grid-area: ytvideo;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    background: #da796f;
+    border: 2px dashed #2d2f2d; }
+    .yt-bc .yt iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .yt-bc .bc-container {
+    max-width: 700px; }
+    .yt-bc .bc-container .bc {
+      left: 0;
+      width: 100%;
+      height: 0;
+      position: relative;
+      padding-bottom: 100%;
+      background: rgba(255, 213, 70, 0.4);
+      border: 2px dashed rgba(236, 198, 48, 0.5); }
+      .yt-bc .bc-container .bc iframe {
+        border: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute; }
+
 #main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #212221;
+  padding: 25px 2rem;
   color: #fff;
-  height: 60px; }
+  height: 90px; }
+  #main-footer .icons a {
+    padding: 0.7rem; }
+    #main-footer .icons a:hover {
+      color: #da796f;
+      transition: all 0.25s ease-out; }
 
 @media screen and (max-width: 768px) {
   main {
